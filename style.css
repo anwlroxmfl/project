@@ -1,0 +1,44 @@
+/* 초기화 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 전체 배경, 글자색 */
+body {
+    background-color: #fff8f0;
+    color: #555555;
+}
+
+/* 맨 위 헤더 */
+header {
+    background-color: #ffb6c1;
+    padding: 20px;
+}
+
+/* 섹션마다 화면 높이만큼 */
+div {
+    height: 100px;
+    padding: 50px;
+}
+
+#about {
+    background-color: #ffb6c1;
+}
+
+#Skills {
+    background-color: #fff3a3;
+}
+
+#project {
+    background-color: #b8f2e6;
+}
+
+
+
+/* 맨 아래 푸터 */
+footer {
+    text-align: center;
+    padding: 20px;
+}
