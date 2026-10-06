@@ -11,33 +11,36 @@ body {
     color: #555555;
 }
 
-/* 맨 위 헤더 */
+/* 헤더 */
 header {
     background-color: #ffb6c1;
     padding: 20px;
 }
 
-/* 섹션마다 화면 높이만큼 */
-div {
-    height: 100px;
+/* 섹션 */
+section {
+    height: 100vh;
     padding: 50px;
 }
 
 #about {
-    background-color: #ffb6c1;
-}
-
-#Skills {
     background-color: #fff3a3;
 }
 
-#project {
+#skills {
     background-color: #b8f2e6;
 }
 
 
+#projects {
+    background-color: #a0d8ff;
+}
 
-/* 맨 아래 푸터 */
+#contact {
+    background-color: #e6d7ff;
+}
+
+
 footer {
     text-align: center;
     padding: 20px;
