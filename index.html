@@ -4,61 +4,163 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>박동은은 포트폴리오</title>
+    <title>내 포트폴리오</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <!-- 맨 위: 이름 + 메뉴 -->
+    <!-- 헤더 -->
     <header>
-        <h1>
-            <a href="https://github.com/anwlroxmfl/project">박동은</a>
-        </h1>
+        <h1><a href="index.html">항공 포트폴리오</a></h1>
         <nav>
             <ul>
-                <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#projects">PROJECTS</a></li>
-                <li><a href="#contact">CONTACT</a></li>
+                <li><a href="#page1">탑승권</a></li>
+                <li><a href="#page2">창문 보기</a></li>
+                <li><button id="button">밤 배경</button></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <!-- 자기소개 : 첫 화면 (큰 제목 + 버튼) -->
-        <section id="about">
-            <p class="badge">PORTFOLIO 2026</p>
-            <h2 class="hero-title">박동은의 포트폴레오</h2>
-            <p class="hero-text">안녕하세요 제 포트폴리오 웹사이트에 오신걸 환영합니다</p>
-            <div>
-                <a href="#projects" class="btn btn-white">프로젝트 보기</a>
-                <a href="#contact" class="btn btn-dark">방명록 쓰기</a>
+        <!-- 탑승권1 -->
+         <section id="page1">
+            <div class="ticket">
+                <div class="ticketCut">
+                    <p>여기를<br>뜯어주세요</p>
+                </div>
+
+                <!-- 탑승권2-->
+                <div class="ticketMain">
+                    <p class="ticketTop">AIRPLANE TICKET</p>
+                    <h2>박동은의 포트폴리오 항공</h2>
+                    <ul class="ticketInfo">
+                        <li><span>기장:</span> 박동은</li>
+                        <li><span>공항 운행 시작: </span> 2009.07.27</li>
+                        <li><span>도착</span> 운행중...</li>
+                        <li><span>좌석</span> 1A, 1B, 1C</li>
+                    </ul>
+                </div>
             </div>
+            <p class="welcome">박동은의 포트폴리오 항공으로 오신 걸 환영합니다.</p>
+            <p class="down">↓ 비행기를 보시려면 화면을 내려주세요</p>
         </section>
 
-        <!-- 스킬 -->
-        <section id="skills">
-            <h2>SKILLS</h2>
-            <p class="big-text"></p>
-            <div class="icon">&lt;/&gt;</div>
-            <div class="line"></div>
-        </section>
+        <!-- 창문 -->
+        <section id="page2">
+            <div class="wall">
+                <!-- 1A -->
+                <div class="seat">
+                    <p class="seatNumber">1A</p>
+                    <div class="searchBox">
+                        <input type="text" class="searchInput" placeholder="검색할 것을 적어주세요..">
+                        <button class="searchButton">검색</button>
+                    </div>
+                    <div class="window">
+                        <div class="outside sky1">
+                            <p class="noResult">아무것도<br>보이지 않는다..</p>
+                            <div class="cardBox"></div>
+                        </div>
+                        <div class="hide">
+                            <p>[ 눌러서 열기 ]</p>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 프로젝트 -->
-        <section id="projects">
-            <h2>PROJECTS</h2>
-            <p></p>
-        </section>
+                <!-- 1B -->
+                <div class="seat">
+                    <p class="seatNumber">1B</p>
+                    <div class="searchBox">
+                        <input type="text" class="searchInput" placeholder="검색할 것을 적어주세요..">
+                        <button class="searchButton">검색</button>
+                    </div>
+                    <div class="window">
+                        <div class="outside sky2">
+                            <p class="noResult">아무것도<br>보이지 않는다..</p>
+                            <div class="cardBox"></div>
+                        </div>
+                        <div class="hide">
+                            <p>[ 눌러서 열기 ]</p>
+                        </div>
+                    </div>
+                </div>
 
-        <!-- 방명록 -->
-        <section id="contact">
-            <h2>CONTACT</h2>
-            <p></p>
+                <!-- 1C -->
+                <div class="seat">
+                    <p class="seatNumber">1C</p>
+                    <div class="searchBox">
+                        <input type="text" class="searchInput" placeholder="검색할 것을 적어주세요..">
+                        <button class="searchButton">검색</button>
+                    </div>
+                    <div class="window">
+                        <div class="outside sky3">
+                            <p class="noResult">아무것도<br>보이지 않는다..</p>
+                            <div class="cardBox"></div>
+                        </div>
+                        <div class="hide">
+                            <p>[ 눌러서 열기 ]</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 내용 -->
+            <div class="allCards">
+                <div class="card">
+                    <h3>자기소개</h3>
+                    <p>안녕하세요 저는 박동은입니다.</p>
+                    <p>벡엔드와 프론트엔드 모두를 잘하고 싶습니다. </p>
+                    <p><a href="https://github.com/anwlroxmfl"><img src="img/깃허브_이미지" alt="깃허브"></a></p>
+                </div>
+                <div class="card">
+                    <h3>취미와 좋아하는것</h3>
+                    <p>게임하는 걸 좋아합니다</p>
+                    <p>오버워치와 세피리아 등등..</p>
+                    <p>게임 개발도 좋아합니다. 1~2시간씩 집에서 게임을 만드는 중입니다</p>
+                </div>
+                <div class="card">
+                    <h3>꿈</h3>
+                    <p>대기업에 벡엔드개발자로취업을 하는것이 목표입니다.</p>
+                    <p>돈이 부족하지 않은 개발자가 되고 싶습니다</p>
+                </div>
+                <div class="card">
+                    <h3>프로그래밍 언어 : C</h3>
+                    <p>C는 가장 기초적으로 배웠고 처음으로 코딩에 접하게 될때 배웠던 언어입니다.</p>
+                    <p>c언어로 포인터,구조체 등등 많은 프로그래밍 기초를 알게 되었습니다.</p>
+                </div>
+                <div class="card">
+                    <h3>프로그래밍 언어 : C++</h3>
+                    <p>c++은 아직 부족한 부분이 많지만 계속 배우고 있는 언어입니다.</p>
+                    <p>게임 개발을 하기위해 현재보다 더 잘알고 싶은 언어중 하나입니다.</p>
+                </div>
+                <div class="card">
+                    <h3>프로그래밍 언어 : python</h3>
+                    <p>파이썬은 잘하는건 아니지만 어느정도 가능한 언어입니다.</p>
+                    <p>작은 게임을 만들고 싶을때 많이 사용해봤습니다.</p>
+                </div>
+                <div class="card">
+                    <h3>GitHub</h3>
+                    <p>저의 포트폴리오가 올라가있습니다.</p>
+                    <p>학교생활을 하면서 배웠던 것들이나 친구들과 프로젝트를 하면서 올린것들이 있습니다.</p>
+                    <p><a href="https://github.com/anwlroxmfl"><img src="img/깃허브_이미지" alt="깃허브"></a></p>
+                </div>
+                <div class="card">
+                    <h3>프로젝트 MakerShelf</h3>
+                    <p>카페에서 물류정리를 완활하게 하기위한 웹사이트를 만드는 프로젝트입니다</p>
+                    <p>현재 벡엔드를 담당하고 있습니다.</p>
+                </div>
+            </div>
+
+            <!-- 흘러가는 구름 -->
+            <div class="cloudArea">
+                <div class="cloudLine1"></div>
+                <div class="cloudLine2"></div>
+                <div class="cloudLine3"></div>
+            </div>
         </section>
     </main>
 
     <footer>
-        <p>© 2026 이름. All rights reserved.</p>
+        <p>© 2026 박동은의 항공 포트폴리오. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
