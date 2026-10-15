@@ -62,50 +62,42 @@ seats.forEach((seat) => {
             newTitle.innerText = title;
             newCard.appendChild(newTitle);
 
-            // 문장 검사 : 카드마다 문장은 1개만 넣기
-            let added = false;
+            // 문장 검사
             const sentences = card.querySelectorAll("p");
             sentences.forEach((sentence) => {
                 const text = sentence.innerText;
-                const newSentence = document.createElement("p");
-                newSentence.innerText = text;
 
-                if (added === false) {
-                    // 검색어가 들어 있는 문장은 노랗게 해서 넣기
+                if (text !== "") {
+                    const newSentence = document.createElement("p");
+                    newSentence.innerText = text;
+
+                    // 검색어 있을시 노랗게
                     if (text.toLowerCase().includes(searchWord)) {
                         newSentence.classList.add("match");
-                        newCard.appendChild(newSentence);
                         found = true;
-                        added = true;
                     }
-                    // 부제목이 맞으면 첫 문장 넣기 (빈 줄은 빼고)
-                    else if (titleFound) {
-                        if (text !== "") {
-                            newCard.appendChild(newSentence);
-                            added = true;
-                        }
-                    }
+
+                    newCard.appendChild(newSentence);
                 }
             });
 
-            // 찾은 카드는 2개까지만 창문에 넣기
             if (found) {
                 count = count + 1;
-                if (count <= 2) {
+                if (count === 1) {
                     cardBox.appendChild(newCard);
                 }
             }
         });
 
-        // 2개보다 많으면 안내 문구
-        if (count > 2) {
+        // 1++ 있을시
+        if (count > 1) {
             const more = document.createElement("p");
             more.classList.add("more");
-            more.innerText = `+ ${count - 2}개 더 있어요. 더 자세히 검색해보세요`;
+            more.innerText = `+ ${count - 1}개 더 있어요. 다른 창문에서 더 자세히 검색해보세요`;
             cardBox.appendChild(more);
         }
 
-        // 하나도 없으면 안내 문구
+        // 없을시
         if (count === 0) {
             noResult.classList.add("show");
         }
